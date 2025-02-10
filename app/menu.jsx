@@ -41,12 +41,12 @@ const Menu = () => {
         <MenuItem
           title="Help"
           icon="help-circle"
-          onPress={() => handleNavigation("help")}
+         
         />
         <MenuItem
           title="Orders"
           icon="cart"
-          onPress={() => handleNavigation("Orders")}
+        
         />
         <MenuItem
           title="Favorites"
@@ -61,7 +61,7 @@ const Menu = () => {
         <MenuItem
           title="Settings"
           icon="settings"
-          onPress={() => handleNavigation("settings")}
+          
         />
         <MenuItem
           title="Logout"

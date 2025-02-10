@@ -141,9 +141,11 @@ const CheckoutPage = () => {
       </View>
 
       {/* Place Order Button */}
-      <TouchableOpacity style={styles.placeOrderButton} onPress={handlePlaceOrder}>
+      <View>
+      <TouchableOpacity style={styles.placeOrderButton} onPress={() => router.push("/completed")}>
         <Text style={styles.placeOrderButtonText}>Place Order</Text>
       </TouchableOpacity>
+      </View>
     </ScrollView>
   );
 };

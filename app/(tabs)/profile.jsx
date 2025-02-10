@@ -110,15 +110,8 @@ const logoutAction = async () => {
       {/* Address Management */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Saved Addresses</Text>
-        {userinfo.addresses.map((address) => (
-          <View key={address.id} style={styles.infoItem}>
-            <Ionicons name="location" size={20} color="#007BFF" />
-            <View>
-              <Text style={styles.infoText}>{address.type}</Text>
-              <Text style={styles.infoSubText}>{address.address}</Text>
-            </View>
-          </View>
-        ))}
+        
+        
         <TouchableOpacity style={styles.addButton}>
           <Text style={styles.addButtonText}>Add New Address</Text>
         </TouchableOpacity>
@@ -127,14 +120,7 @@ const logoutAction = async () => {
       {/* Payment Methods */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Payment Methods</Text>
-        {userinfo.paymentMethods.map((payment) => (
-          <View key={payment.id} style={styles.infoItem}>
-            <Ionicons name="card" size={20} color="#007BFF" />
-            <Text style={styles.infoText}>
-              {payment.type} ****{payment.last4}
-            </Text>
-          </View>
-        ))}
+        
         <TouchableOpacity style={styles.addButton}>
           <Text style={styles.addButtonText}>Add New Payment Method</Text>
         </TouchableOpacity>
@@ -156,21 +142,7 @@ const logoutAction = async () => {
         ))}
       </View>
 
-      {/* Wishlist */}
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Wishlist</Text>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-          {userinfo.wishlist.map((item) => (
-            <View key={item.id} style={styles.wishlistItem}>
-              <Image
-                source={{ uri: item.image }}
-                style={styles.wishlistImage}
-              />
-              <Text style={styles.wishlistText}>{item.name}</Text>
-            </View>
-          ))}
-        </ScrollView>
-      </View>
+      
       {/* Preferences */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Preferences</Text>
